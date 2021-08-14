@@ -148,6 +148,7 @@ let s:black = s:colors.black
 let s:foreground = s:colors.foreground
 let s:background = s:colors.background
 let s:comment_grey = s:colors.comment_grey
+let s:comment_yellow = s:colors.comment_yellow
 let s:gutter_fg_grey = s:colors.gutter_fg_grey
 let s:cursor_grey = s:colors.cursor_grey
 let s:visual_grey = s:colors.visual_grey
