@@ -40,6 +40,8 @@
 " | Gutter Grey  | rgb(76, 82, 99)    | #4b5263 |
 " |--------------+--------------------+---------|
 " | Comment Grey | rgb(92, 99, 112)   | #5c6370 |
+" |--------------+--------------------+---------|
+" | Comment Yellow | rgb(232, 232, 62)| #e8e83e |
 " +---------------------------------------------+
 
 " }}}
@@ -164,14 +166,14 @@ let g:terminal_ansi_colors = [
   \ s:black.gui, s:red.gui, s:green.gui, s:yellow.gui,
   \ s:blue.gui, s:purple.gui, s:cyan.gui, s:comment_grey.gui,
   \ s:visual_grey.gui, s:red.gui, s:green.gui, s:yellow.gui,
-  \ s:blue.gui, s:purple.gui, s:cyan.gui, s:white.gui
+  \ s:blue.gui, s:purple.gui, s:cyan.gui, s:white.gui, s:comment_yellow.gui
 \]
 
 " }}}
 
 " Syntax Groups (descriptions and ordering from `:h w18`) {{{
 
-call s:h("Comment", { "fg": s:comment_grey, "gui": "italic", "cterm": "italic" }) " any comment
+call s:h("Comment", { "fg": s:comment_yellow, "gui": "italic", "cterm": "italic" }) " any comment
 call s:h("Constant", { "fg": s:cyan }) " any constant
 call s:h("String", { "fg": s:green }) " a string constant: "this is a string"
 call s:h("Character", { "fg": s:green }) " a character constant: 'c', '\n'
